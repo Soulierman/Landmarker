@@ -1,0 +1,33 @@
+body{
+    font-family: 'Source Sans 3';
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{ display: flex; justify-content: center;}
+#locationcontainer { 
+    height: 70vh; 
+    width: 25vw; 
+    margin: 2vw;
+    border: 3px solid black;
+}
+#mapcontainer { 
+    display: flex;
+    flex-direction: column;
+}
+#mapmenus { 
+    margin: 2vw;
+    margin-bottom: 0;
+    height: auto; 
+    width: 70vw; 
+    border-bottom: 0px;
+}
+#map { 
+    margin: 2vw;
+    margin-top: 0;
+    height: 70vh; 
+    width: 70vw;
+    border: 3px solid black; 
+}
