@@ -27,6 +27,13 @@
         <h1>LandMarker</h1>
         </section>
     </header>
+    <div id="flashes">
+    {% for message in get_flashed_messages() %}
+        <div class='error'>
+            There was an error: {{ message }}
+        </div>
+    {% endfor %}
+    </div>
     <main>
         <section id="locationcontainer">
             {% block location %} {% endblock %}

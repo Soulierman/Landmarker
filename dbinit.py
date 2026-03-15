@@ -10,6 +10,7 @@ print("Users table created successfully")
 
 conn.execute('''CREATE TABLE Locations
 (ID INTEGER PRIMARY KEY AUTOINCREMENT,
+name VARCHAR(255) NOT NULL,
 userID INTEGER NOT NULL REFERENCES Users(ID),
 latitude REAL NOT NULL,
 longitude REAL NOT NULL,
@@ -24,6 +25,7 @@ print("Pictures table created successfully")
 
 conn.execute('''INSERT INTO Users (username,password) VALUES ("Alice",12345)''')
 conn.execute('''INSERT INTO Users (username,password) VALUES ("Bob",56789)''')
+
 conn.commit()
 
 # INTEGER PRIMARY KEY AUTOINCREMENT
